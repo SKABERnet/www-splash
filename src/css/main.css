@@ -1,0 +1,82 @@
+:root {
+    --color-link: #FFEE32;
+    --color-hover: #FFD100;
+    --color-dark: #202020;
+    --color-gray-dark: #333533;
+    --color-gray-light: #D6D6D6;
+    --color-light: #ffffff;
+
+    --font-body: 'Noto Sans Symbols', sans-serif;
+}
+
+html {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    line-height: 19px;
+    font-size: 16px;
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a>svg {
+    fill: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-hover);
+}
+
+a:hover>svg {
+    fill: var(--color-hover);
+}
+
+b,
+strong,
+.bold {
+    font-weight: 600;
+}
+
+b b,
+b strong,
+strong strong,
+strong b,
+.black {
+    font-weight: 800;
+}
+
+i {
+    font-style: italic;
+}
+
+.splash {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.splash h1 {
+    font-size: 5rem;
+    line-height: 1.1em;
+    font-weight: 900;
+}
+
+.splash p.cta {
+    line-height: 1.25em;
+}
+
+svg {
+    display: inline-block;
+    height: 1em;
+    width: 1.2em;
+    text-align: center;
+    vertical-align: text-bottom;
+    line-height: 1em;
+}
